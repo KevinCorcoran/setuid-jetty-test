@@ -37,6 +37,8 @@ Notice that the server logs this:
 My UID will change in 10 seconds...
 SUCCESFULLY CHANGED MY UID
 ```
+(In retrospect, the 10 second sleep is totally unnecessary to demonstrate the behavior of
+changing the process's uid.)
 
 Now it's owned by user with uid 501!
 ```
