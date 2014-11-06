@@ -3,7 +3,7 @@ setuid-jetty-test
 
 Build an uberjar:
 ```
-lein uberjar
+ᐅ lein uberjar
 ```
 
 Run it as root:
@@ -22,7 +22,6 @@ Observe that the process is owned by root:
 
 Double check, like state farm + aaron rodgers:
 ```
-~/code/setuid-jetty-test
 ᐅ ps aux | grep java
 root            10219   0.0  1.7  7099028 284252 s000  S+    2:18PM   0:14.59 /usr/bin/java -jar target/setuid-jetty-test-0.1.0-SNAPSHOT-standalone.jar -c test-resources/config.conf -b test-resources/bootstrap.cfg
 ```
