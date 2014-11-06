@@ -8,8 +8,8 @@ lein uberjar
 
 Run it as root:
 ```
-su root
-java -jar target/setuid-jetty-test-0.1.0-SNAPSHOT-standalone.jar \
+ᐅ su root
+# java -jar target/setuid-jetty-test-0.1.0-SNAPSHOT-standalone.jar \
   -b test-resources/bootstrap.cfg \
   -c test-resources/config.conf
 ```
@@ -49,5 +49,7 @@ Now it's owned by user with uid 501!
 ```
 
 ... and it can still handle requests:
+```
 ᐅ curl http://localhost:443/hello
 There will be no reprieve for the thieves.%
+```
