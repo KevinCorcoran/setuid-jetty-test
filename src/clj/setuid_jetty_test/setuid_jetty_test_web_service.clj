@@ -13,7 +13,7 @@
                        (LibC/setuid 501)
                        (println "SUCCESFULLY CHANGED MY UID"))
                      {:status  200
-                      :body    "ok"}))
+                      :body    "There will be no reprieve for the thieves."}))
     (route/not-found "Not Found")))
 
 (trapperkeeper/defservice hello-web-service
